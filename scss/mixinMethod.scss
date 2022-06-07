@@ -1,0 +1,10 @@
+@mixin fontSize($size,$lineHeight) {
+    font-size: $size +px;
+    line-height: $lineHeight +rem;
+  }
+
+
+.aa {
+    background-color: aqua;
+    @include fontSize(40,5)
+}
