@@ -1,0 +1,12 @@
+@mixin bg_cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @content
+}
+
+.aa {
+    @include bg_cover {
+       background-color: #FFF;
+   }
+}

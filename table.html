@@ -1,0 +1,85 @@
+<div class="wrap">
+    <h2>直向排列</h2>
+    <table class="table straight-table">
+      <tr>
+        <th>編號</th>
+        <th>品項</th>
+        <th>成本</th>
+        <th>售價</th>
+        <th>存貨</th>
+        <th>備註</th>
+      </tr>
+      <tr>
+        <td data-th="編號">1001</td>
+        <td data-th="品項">鞋子1</td>
+        <td data-th="成本">301</td>
+        <td data-th="售價">451</td>
+        <td data-th="存貨">1</td>
+        <td data-th="備註"></td>
+      </tr>
+      <tr>
+        <td data-th="編號">1002</td>
+        <td data-th="品項">鞋子2</td>
+        <td data-th="成本">301</td>
+        <td data-th="售價">451</td>
+        <td data-th="存貨">1</td>
+        <td data-th="備註"></td>
+      </tr>
+      <tr>
+        <td data-th="編號">1003</td>
+        <td data-th="品項">鞋子3</td>
+        <td data-th="成本">301</td>
+        <td data-th="售價">451</td>
+        <td data-th="存貨">1</td>
+        <td data-th="備註"></td>
+      </tr>
+      <tr>
+        <td data-th="編號">1004</td>
+        <td data-th="品項">鞋子4</td>
+        <td data-th="成本">331</td>
+        <td data-th="售價">421</td>
+        <td data-th="存貨">3</td>
+        <td data-th="備註">已有走到怎麼樣無數把握維護實在管理系統。</td>
+      </tr>
+    </table>
+  </div>
+  <style>
+      .straight-table tr,
+      .straight-table td {
+        display: block;
+      }
+      .straight-table tr {
+        margin-bottom: 10px;
+      }
+      .straight-table th {
+        display: none;
+      }
+      .straight-table td {
+        display: flex;
+        padding: 0;
+        line-height: 38px;
+      }
+      .straight-table td::before {
+        content: attr(data-th) '：';
+        background-color: #aaaaaa;
+        width: 30%;
+        text-align: center;
+        margin-right: 1rem;
+      }
+      @media screen and (min-width: 769px) {
+        .straight-table tr {
+          display: table-row;
+          margin-bottom: 0;
+        }
+        .straight-table th,
+        .straight-table td {
+          display: table-cell;
+          padding: 10px 0;
+          line-height: 1;
+        }
+        .straight-table td::before {
+          display: none;
+        }
+      }
+      
+  </style>

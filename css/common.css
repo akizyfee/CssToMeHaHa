@@ -1,0 +1,39 @@
+
+/*放大*/
+.toBig{
+    transform: scale(1.2, 1.2);
+}
+
+/*簡易線條*/
+.fakerLine::after{
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #adb5bd;
+    right: -5%;
+    left: -5%;
+}
+
+/*hover底下元素*/
+.hoverPointer {
+    pointer-events: none;
+}
+
+/*鏤空文字*/
+.hollow_out {
+    mix-blend-mode: screen;
+}
+
+/*model-background*/
+body.modal-open>body.show,
+.modal-backdrop.fade {
+    background-color: #FFF;
+    filter: blur(10px);
+    opacity: .9;
+    z-index: 9;
+}
+
+/*做單層背景透明*/
+.opacy_back{
+    background-color: rgba(248, 249, 250, 0.7);
+}
+    

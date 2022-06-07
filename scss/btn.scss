@@ -1,0 +1,8 @@
+.btn {
+    &-primary {
+      &:hover {
+        background-color: #FFF;
+        color: $dark;
+      }
+    }
+}

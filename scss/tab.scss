@@ -1,0 +1,38 @@
+//inquiry tab
+.nav-tabs {
+    border-bottom: $nav-tabs-border-width solid #4F372F;
+    .nav-link {
+        color: #FFF;
+        margin-bottom: -$nav-tabs-border-width;
+        background: none;
+        background-color: #4F372F;
+        border: $nav-tabs-border-width solid transparent;
+        @include border-top-radius($nav-tabs-border-radius);
+        &:hover,
+        &:focus {
+            border-color: $nav-tabs-link-hover-border-color;
+            // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
+            isolation: isolate;
+            border-bottom-color: transparent;
+        }
+        &.disabled {
+            color: $nav-link-disabled-color;
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+    .nav-link.active,
+    .nav-item.show .nav-link {
+        color: #000;
+        background-color: transparent;
+        border-color: #4F372F;
+        border-bottom-color: transparent;
+        margin-top: -10px;
+        div {
+            border-top: 5px solid #4F372F;
+            padding-top: 10%;
+            border-bottom-color: transparent;
+        }
+    }
+  }
+  
